@@ -3,24 +3,14 @@ on:
   workflow_dispatch:
     inputs:
       patch_source:
-        description: 'Select patch source'
+        description: 'Select paresh source'
         required: true
-        default: 'morphe'
-        type: choice
-        options:
-          - morphe
-          - morphe-dev
-          - piko
-          - rushi
-          - hoo-dles
-          - hooman
-          - paresh
-          - de-vanced
-          - tiktok
+        default: 'paresh'
+        type: string
   workflow_call:
     inputs:
       patch_source:
-        default: 'morphe'
+        default: 'paresh'
         type: string
       filter_changelog:
         default: false
